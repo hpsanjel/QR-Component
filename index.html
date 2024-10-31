@@ -3,13 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
 		<title>Frontend Mentor | QR code component</title>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap");
 			* {
@@ -21,7 +19,12 @@
 			body {
 				font-size: 15px;
 				font-family: "Outfit", sans-serif;
-				background-color: hsl(212, 45%, 89%);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh; /* Full viewport height */
+				margin: 0;
+				background-color: #f0f0f0;
 			}
 
 			h2 {
@@ -43,7 +46,6 @@
 				color: hsl(228, 45%, 44%);
 			}
 			.wrapper {
-				margin: 20px auto;
 				width: 350px;
 				background-color: white;
 				padding: 15px;
@@ -58,12 +60,11 @@
 		</style>
 	</head>
 	<body>
-		<div class="wrapper flex justify-center items-center">
+		<div class="wrapper">
 			<img src="./images/image-qr-code.png" />
 			<h2>Improve your front-end skills by building projects</h2>
 			<p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+			<div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Hari Prasad Sanjel</a>.</div>
 		</div>
-
-		<div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Hari Prasad Sanjel</a>.</div>
 	</body>
 </html>
